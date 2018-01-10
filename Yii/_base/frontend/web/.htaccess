@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+# if a directory or a file exists, use it directly
+RewriteEngine on RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# otherwise forward it to index.php
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+</IfModule>

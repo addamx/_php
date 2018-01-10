@@ -1,0 +1,18 @@
+<html>
+<head>
+	
+</head>
+<body>
+<h1>{$a}</h1>
+<form action="{$smarty.const.__FILE__}" method="post">
+	<p><input name="user" type="text" placeholder="user"/></p>
+	<p><input name="password" type="text" placeholder="password" /></p>
+	<p><input name="salt" type="text" placeholder="salt"/></p>
+	<input name='id' type='text' value='5' hidden />
+	<button type="submit" >提交</button>
+	<a href="{$smarty.const.__MODULE__}">{$smarty.const.__MODULE__}</a>
+	<a href="{$smarty.const.__CONTROLLER__}">{$smarty.const.__CONTROLLER__}</a>
+	<a href="{$smarty.const.__ACTION__}">{$smarty.const.__ACTION__}</a>
+</form>
+</body>
+</html>
